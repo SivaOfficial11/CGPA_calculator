@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <h1 class="title">🎓CGPA CALCULATOR</h1>
+
+        <div class="input-group">
+            <label class="label">Number of subjects</label>
+            <input 
+                type="text" 
+                id="subjectCount" 
+                class="input-field" 
+                placeholder="Enter number of subjects"
+                maxlength="2"
+            >
+        </div>
+
+        <div id="subjectsContainer" class="subjects-container">
+            <!-- Subject inputs will be added here -->
+        </div>
+
+        <button id="calculateBtn" class="calculate-btn">
+            Get 
+        </button>
+
+        <div class="results-grid">
+            <div class="result-box percentage">
+                <p class="result-label">Percentage</p>
+                <p id="percentageDisplay" class="result-value">-</p>
+            </div>
+            <div class="result-box cgpa">
+                <p class="result-label">CGPA</p>
+                <p id="cgpaDisplay" class="result-value">-</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
