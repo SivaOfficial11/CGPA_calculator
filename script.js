@@ -74,8 +74,9 @@
             }
 
             const percentage = (totalMarks / validInputs).toFixed(2);
-            const cgpa = (percentage / 10).toFixed(1);
+            const cgpa = (percentage / 9.5).toFixed(1);
 
             percentageDisplay.textContent = percentage + '%';
             cgpaDisplay.textContent = cgpa;
+
         });
